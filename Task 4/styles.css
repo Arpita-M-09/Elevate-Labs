@@ -1,0 +1,147 @@
+/* Base styles for desktop */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff8f0;
+  color: #4a342e;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  font-family: 'Georgia', serif;
+  color: #d35400;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #d35400;
+  margin: 0;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #e67e22;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #f7d9b1;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sidebar h2 {
+  color: #a04000;
+  margin-bottom: 12px;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.main-content h2 {
+  color: #d35400;
+  font-family: 'Georgia', serif;
+  margin-bottom: 15px;
+}
+
+.flavor {
+  background-color: #ffe6c9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(163, 100, 50, 0.3);
+}
+
+.flavor h3 {
+  margin-top: 0;
+  color: #b94800;
+}
+
+.flavor p {
+  margin-bottom: 10px;
+}
+
+/* Responsive & nicely styled images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto; /* centers image */
+}
+
+/* Optional: limit max width for better aesthetics */
+.flavor img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #a0522d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .sidebar, .main-content {
+    width: 100%;
+  }
+}
